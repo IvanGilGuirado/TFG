@@ -1,0 +1,14 @@
+package com.example.hellborn_backend.DTO;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@Data
+public class TipoEntradaDTO {
+
+    private String categoria;
+    private Float precio;
+    private Boolean vip;
+
+}
