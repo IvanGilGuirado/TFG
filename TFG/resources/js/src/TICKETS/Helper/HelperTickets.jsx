@@ -1,6 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import { createContext, useEffect, useState } from "react";
-import { recuperarTickets } from "../API/api";
+import { getTickets } from "../../TIENDA/API/api";
+
 
 export const HelperTicketsContext = createContext();
 
@@ -9,8 +10,9 @@ export const HelperTicketsProvider = ({ children }) => {
 
     useEffect(() => {
         async function iniciar() {
-            const resultado = await recuperarTickets()
+            const resultado = await getTickets()
             setTickets(resultado)
+            console.log(resultado)
         }
         iniciar()
     }, [])

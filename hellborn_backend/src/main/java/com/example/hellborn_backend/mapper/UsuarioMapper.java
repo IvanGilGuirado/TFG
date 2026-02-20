@@ -1,10 +1,12 @@
 package com.example.hellborn_backend.mapper;
 
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
 
 import com.example.hellborn_backend.DTO.UsuarioDTO;
 import com.example.hellborn_backend.entity.Usuario;
 
+@Component
 public class UsuarioMapper {
 
     private final ModelMapper mapper = new ModelMapper();

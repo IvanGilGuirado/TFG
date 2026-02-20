@@ -9,6 +9,5 @@ public class TipoEntradaDTO {
 
     private String categoria;
     private Float precio;
-    private Boolean vip;
-
+    private String descripcion;
 }

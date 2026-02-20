@@ -23,7 +23,7 @@ function Footer() {
 
                                 <li> <Link to="/Routes" className="nav-link">Route HF</Link> </li>
                                 <li> <Link to="/Tienda" className="nav-link">Tienda</Link></li>
-                                <li><Link to="/Tickets" className="nav-link-tickets">Tickets</Link></li>
+                                <li><Link to="/Tickets" className="nav-link">Tickets</Link></li>
 
                             </ul>
                         </div>

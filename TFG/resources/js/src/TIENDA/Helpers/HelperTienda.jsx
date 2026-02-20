@@ -12,7 +12,6 @@ export const HelperTiendaProvider = ({ children }) => {
         async function iniciar() {
             const resultado = await getMerch(categoriaActiva)
             setMerch(resultado)
-            console.log(resultado);
         }
         iniciar()
     }, [categoriaActiva])

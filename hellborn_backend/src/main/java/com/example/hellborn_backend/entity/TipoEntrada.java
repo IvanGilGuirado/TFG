@@ -30,8 +30,8 @@ public class TipoEntrada {
     @Column(name = "precio")
     private Float precio;
 
-    @Column(name = "vip")
-    private Boolean vip;
+    @Column(name = "descripcion")
+    private String descripcion;
 
     @OneToMany(mappedBy = "tipoEntrada")
     private List<Entrada> entradas;
