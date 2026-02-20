@@ -13,10 +13,10 @@ class EventoController extends Controller
 
         return Evento::when($request->ciudad, fn($q) =>
             $q->where('ciudad', $request->ciudad))
-            ->when($request->titulo, fn($q) =>
-                $q->where('nombre', 'like', "%{$request->titulo}%"))
-            ->when($request->fecha, fn($q) =>
-                $q->whereDate('fechaInicio', $request->fecha))
+            ->when($request->nombre, fn($q) =>
+                $q->where('nombre', 'like', "%{$request->nombre}%"))
+            ->when($request->fechaInicio, fn($q) =>
+                $q->whereDate('fechaInicio', $request->fechaInicio))
             ->get();
 
     }

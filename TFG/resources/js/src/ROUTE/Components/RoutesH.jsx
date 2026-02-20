@@ -51,7 +51,7 @@ function RoutesH() {
                 className="filter-input"
                 id="searchInput"
                 placeholder="BUSCAR POR TÍTULO"
-                name='filtro'
+                name='nombre'
               />
 
               <input type="date" className="filter-date" id="dateFilter" name='fechaInicio' />

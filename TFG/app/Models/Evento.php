@@ -14,8 +14,6 @@ class Evento extends Model
         'tipoEvento',
         'idFestival',
         'url_image'
-
-
     ];
 
     public $timestamps = false;

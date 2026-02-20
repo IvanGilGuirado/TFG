@@ -34,7 +34,7 @@ function Tienda() {
                         <button className="category-btn" onClick={() => setCategoriaActiva("accesorio")}>
                             Accesorios
                         </button>
-                        <button className="category-btn" onClick={() => setCategoriaActiva("vinilos")} >
+                        <button className="category-btn" onClick={() => setCategoriaActiva("vinilo")} >
                             Vinilos
                         </button>
                     </div>
@@ -52,7 +52,7 @@ function Tienda() {
 
                                     <div className='product-info'>
                                         <h3 className="product-name">{elemento.nombre}</h3>
-                                        <p className="product-price">{elemento.precio}</p>
+                                        <p className="product-price">{elemento.precio}€</p>
                                         <button className="product-btn" onClick={() => addMerch(elemento)}>Añadir al Carrito</button>
                                     </div>
 
